@@ -178,7 +178,6 @@ void Admin::give2ndDose()
 	system("CLS");
 	cout << "\t\tGive Dose\n\n";
 	long long NID = commmon.dose2WaitingList.Front();
-	cout << NID;
 	int userIndex = commmon.findUser(NID);
 	cout << "Are you sure that " << commmon.usersList.At(userIndex).name << " has taken the Second dose? (Y / N): ";
 	char choice;
